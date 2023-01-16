@@ -1,0 +1,16 @@
+<nav>
+  <div class="nav-wrapper">
+    <a class="brand-logo" routerLink="">Rotas Ng2</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+      <li routerLinkActive="active"><a routerLink="/cursos">Cursos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<!--  href="#" --> 
+<!-- routerLinkActive="active" -> ao clicar deixa a aba selecionada mais escurinha, como se estivesse pressionado-->
