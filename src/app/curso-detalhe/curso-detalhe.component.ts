@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { CursosService } from '../cursos/cursos.service';
 
@@ -14,7 +14,8 @@ export class CursoDetalheComponent implements OnInit{
   curso: any;
   
   constructor(private route: ActivatedRoute, 
-              private cursosService: CursosService){
+              private cursosService: CursosService,
+              private router: Router){
    // this.id = this.route.snapshot.params['id']; // só mostra o id que foi iniciado
   }
 
@@ -23,6 +24,11 @@ export class CursoDetalheComponent implements OnInit{
         this.id = params['id'];
 
         this.curso = this.cursosService.getCurso(this.id);
+
+        // redirecionando a rota
+        if(this.curso == null){
+          this.router.navigate(['/naoEncontrado']);
+        }
       }
     );
   }
