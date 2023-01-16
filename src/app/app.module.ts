@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { MaterializeModule } from 'angular2-materialize';
 import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
+import { CursosService } from './cursos/cursos.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
     MaterializeModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CursosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
