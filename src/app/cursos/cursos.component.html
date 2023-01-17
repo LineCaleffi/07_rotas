@@ -4,7 +4,7 @@
 
 <div class="collection">
     <!-- quando clicar no curso é redirecionado para a tela de "cursos com ID" -->
-    <!--<a class="collection-item" *ngFor="let curso of cursos" [routerLink]="['/curso', curso.id]">{{ curso.nome }}</a> -->
+    <a class="collection-item" *ngFor="let curso of cursos" [routerLink]="['/curso', curso.id]">{{ curso.nome }}</a>
 </div>
 
 <button (click)="proximaPagina()">Próx. Página</button>

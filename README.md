@@ -9,6 +9,7 @@ Aprendendo a programar rotas com Angular2
 - Escutando mudanças nos parâmetros de roteamento
 - Aplicando CSS em rotas ativas
 - Rotas Imperativas
+- Modo de funcionalidade
 
 
 ## Comandos
