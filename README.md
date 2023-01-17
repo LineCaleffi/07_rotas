@@ -10,6 +10,7 @@ Aprendendo a programar rotas com Angular2
 - Aplicando CSS em rotas ativas
 - Rotas Imperativas
 - Modo de funcionalidade
+- Rotas filhas 
 
 
 ## Comandos
@@ -18,3 +19,7 @@ Aprendendo a programar rotas com Angular2
 - RouterLinkActive
 - path: 'xxxxx', component: _nome_do_componente_
 - this.router.navigate(['/xxxxxx']); --> redireciona a rota para outro component
+
+
+###
+Para projetos com bastante componentes, é necessário criar um routing e um modulo para cada um, assim o APP.Module não fica sobrecarregado 
