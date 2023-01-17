@@ -28,4 +28,9 @@ export class AlunoDetalheComponent implements OnInit, OnDestroy{
   ngOnDestroy(){
     this.inscricao.unsubscribe();
   }
+
+  // Redirecionando para editar 
+  editarAluno(){
+    this.router.navigate(['/alunos', this.aluno.id, 'editar'])
+  }
 }
