@@ -4,23 +4,15 @@
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
       <li routerLinkActive="active"><a routerLink="/cursos" [queryParams]=" { pagina:1 } ">Cursos</a></li>
-      <li routerLinkActive="active"><a [routerLink]="[ 'curso', idCurso.value ]">Curso com ID</a></li>
+     <!-- <li routerLinkActive="active"><a [routerLink]="[ 'curso', idCurso.value ]">Curso com ID</a></li--> 
       <li routerLinkActive="active"><a routerLink="/alunos">Alunos</a></li>
     </ul>
   </div>
 </nav>
 
 <div class="container">
-  <p> Entre com o id do curso</p>
+<!--  <p> Entre com o id do curso</p>
   <input #idCurso>  
-  <br><br>
+  <br><br>-->
   <router-outlet></router-outlet>
 </div>
-
-<!--  href="#" --> 
-<!-- 
-  routerLinkActive="active" -> ao clicar deixa a aba selecionada mais escurinha, como se estivesse pressionado
-
-
-  Para projetos com bastante componentes, é necessário criar um routing e um modulo para cada um, assim o APP.Module não fica sobrecarregado 
--->

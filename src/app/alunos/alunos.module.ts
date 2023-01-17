@@ -1,3 +1,4 @@
+import { AlunosService } from './alunos.service';
 import { AlunosComponent } from './alunos.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -16,6 +17,7 @@ import { AlunoDetalheComponent } from './aluno-detalhe/aluno-detalhe.component';
   imports: [
     CommonModule,
     AlunosRoutingModule
-  ]
+  ],
+  providers: [AlunosService]
 })
 export class AlunosModule { }
