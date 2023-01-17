@@ -27,3 +27,8 @@ import { CursosModule } from './cursos/cursos.module';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+/*
+  Para projetos com bastante componentes, é necessário criar um routing e um modulo para cada um, assim o APP.Module não fica sobrecarregado 
+*/

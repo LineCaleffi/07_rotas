@@ -23,3 +23,8 @@ import { CursosService } from './cursos.service';
   providers: [CursosService],
 })
 export class CursosModule { }
+
+
+/*
+  Para projetos com bastante componentes, é necessário criar um routing e um modulo para cada um, assim o APP.Module não fica sobrecarregado 
+*/
