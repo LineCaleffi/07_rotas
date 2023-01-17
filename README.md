@@ -21,5 +21,5 @@ Aprendendo a programar rotas com Angular2
 - this.router.navigate(['/xxxxxx']); --> redireciona a rota para outro component
 
 
-###
+### OBs:
 Para projetos com bastante componentes, é necessário criar um routing e um modulo para cada um, assim o APP.Module não fica sobrecarregado 
