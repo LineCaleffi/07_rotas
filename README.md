@@ -16,3 +16,4 @@ Aprendendo a programar rotas com Angular2
 - RouterLink
 - RouterLinkActive
 - path: 'xxxxx', component: _nome_do_componente_
+- this.router.navigate(['/xxxxxx']); --> redireciona a rota para outro component
