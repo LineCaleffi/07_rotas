@@ -1,8 +1,19 @@
 <h4>Login: </h4>
 
-<form>
-    <label> Usuário: </label> <input type="text">
-    <label>Senha: </label> <input type="password">
-    <button type="submit">Entrar </button>
-    <button type="reset"> Cancelar</button>
-</form>
+<div class="row">
+    <div class="input-field col s12">
+      <input id="user" type="text" class="validate" [(ngModel)]="usuario.nome">
+      <label class="active" for="user">Usuário: </label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="input-field col s12">
+      <input id="senha" type="password" class="validate" [(ngModel)]="usuario.senha">
+      <label class="active" for="senha">Senha: </label>
+    </div>
+</div>
+
+<button class="btn waves-effect waves-light" type="submit" name="action" (click)="fazerLogin()">Entrar
+    <i class="material-icons right">send</i>
+  </button>
