@@ -1,3 +1,4 @@
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 import { CursosGuard } from './guard/cursos.guard';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
@@ -13,8 +14,12 @@ const routes: Routes = [
     mod => mod.AlunosModule), canActivate: [AuthGuard], canLoad: [AuthGuard]
   },
   { path: 'login', component: LoginComponent},
-  { path:'', component: HomeComponent, canActivate: [AuthGuard], canLoad: [AuthGuard]}
-
+  { path:'home', component: HomeComponent, canActivate: [AuthGuard], canLoad: [AuthGuard]},
+  { path:'', redirectTo:'/home', pathMatch: 'full' },
+  /*qualquer rota diferente das de cima será redirecionada pra pag. de Não encontrada
+    se acrescentar o canActivate: [AuthGuard] -> redireciona para a página de login caso não for encontrada. */
+  { path: '**', component: PaginaNaoEncontradaComponent} 
+ 
 ];
 
 @NgModule({
