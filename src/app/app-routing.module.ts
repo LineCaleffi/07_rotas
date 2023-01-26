@@ -7,13 +7,13 @@ import { AuthGuard } from './guard/auth.guard';
 
 const routes: Routes = [
   { path: 'cursos',  loadChildren: () => import('./cursos/cursos.module').then(
-      mod => mod.CursosModule), canActivate: [AuthGuard], canActivateChild: [CursosGuard]
+      mod => mod.CursosModule), canActivate: [AuthGuard], canActivateChild: [CursosGuard], canLoad: [AuthGuard]
   },
   { path: 'alunos',  loadChildren: () => import('./alunos/alunos.module').then(
-    mod => mod.AlunosModule), canActivate: [AuthGuard]
+    mod => mod.AlunosModule), canActivate: [AuthGuard], canLoad: [AuthGuard]
   },
   { path: 'login', component: LoginComponent},
-  { path:'', component: HomeComponent, canActivate: [AuthGuard]}
+  { path:'', component: HomeComponent, canActivate: [AuthGuard], canLoad: [AuthGuard]}
 
 ];
 
