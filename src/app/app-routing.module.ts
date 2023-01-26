@@ -17,7 +17,7 @@ const routes: Routes = [
   { path:'home', component: HomeComponent, canActivate: [AuthGuard], canLoad: [AuthGuard]},
   { path:'', redirectTo:'/home', pathMatch: 'full' },
   /*qualquer rota diferente das de cima será redirecionada pra pag. de Não encontrada
-    se acrescentar o canActivate: [AuthGuard] -> redireciona para a página de login caso não for encontrada. */
+    se acrescentar o canActivate: [AuthGuard] -> redireciona para a página de login caso não for encontrada. */ 
   { path: '**', component: PaginaNaoEncontradaComponent} 
  
 ];
