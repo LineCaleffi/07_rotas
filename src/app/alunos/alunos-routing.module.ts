@@ -4,6 +4,7 @@ import { AlunosComponent } from './alunos.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AlunosGuard } from '../guard/alunos.guard';
+import { AlunosDeactiveGuard } from '../guard/alunos-deactive.guard';
 
 const routes: Routes = [
   // rotas filhas
@@ -12,7 +13,7 @@ const routes: Routes = [
     children:[
       { path: 'novo', component: AlunoFormComponent },
       { path: ':id', component: AlunoDetalheComponent },
-      { path: ':id/editar', component: AlunoFormComponent }
+      { path: ':id/editar', component: AlunoFormComponent, canDeactivate: [AlunosDeactiveGuard] }
     ] 
   },
 ];
