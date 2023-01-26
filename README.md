@@ -21,6 +21,7 @@ Aprendendo a programar rotas com Angular2
 - path: 'xxxxx', component: _nome_do_componente_
 - this.router.navigate(['/xxxxxx']); --> redireciona a rota para outro component
 - ng g guard guards/auth -> Cria uma nova guarda de rota 
+- Ng g i <nome_inteface> -> cria uma nova interface automático
 
 
 ### OBs:
@@ -30,6 +31,5 @@ Guarda de Rotas (Guard) -> Geralmente utilizamos esse guarda quando não queremo
 - CanActivate impede que usuários não autorizados acessem a rota. 
 - CanActivateChild: Verifica se o usuário pode visitar uma rota filha; 
 - CanDeactivate: Verifica se o usuário pode sair da rota; 
-- CanLoad:
 
 No caso deste projeto, se o usuário não estiver logado ele não deixa acessar a tela de cursos, alunos ou ''.
