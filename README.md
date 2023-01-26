@@ -12,6 +12,7 @@ Aprendendo a programar rotas com Angular2
 - Modo de funcionalidade
 - Rotas filhas 
 - Guarda de Rotas: CanActivate(Aula #64), CanActivateChild(Aula #65), CanDeactivate(Aula #66e67), Resolve(Aula #68), CanLoad(Aula #69)
+- Estilo de URL - adiciona hashtag na URL (Aula #71)
 
 
 ## Comandos (alguns)
@@ -22,6 +23,7 @@ Aprendendo a programar rotas com Angular2
 - this.router.navigate(['/xxxxxx']); --> redireciona a rota para outro component
 - ng g guard guards/auth -> Cria uma nova guarda de rota 
 - Ng g i <nome_inteface> -> cria uma nova interface automático
+- {useHash: true} -> mostra na url /#/xxxxx
 
 
 ### OBs:
