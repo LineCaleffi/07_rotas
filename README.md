@@ -8,9 +8,9 @@ Aprendendo a programar rotas com Angular2
 - Definindo e extraindo parâmetros de roteamento
 - Escutando mudanças nos parâmetros de roteamento
 - Aplicando CSS em rotas ativas
-- Rotas Imperativas
+- Rotas Imperativas (Aula #55)
 - Modo de funcionalidade
-- Rotas filhas 
+- Rotas filhas (Aula #60)
 - Guarda de Rotas: CanActivate(Aula #64), CanActivateChild(Aula #65), CanDeactivate(Aula #66e67), Resolve(Aula #68), CanLoad(Aula #69)
 - Estilo de URL - adiciona hashtag na URL (Aula #71)
 
