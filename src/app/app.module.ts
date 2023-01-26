@@ -1,4 +1,4 @@
-import { AlunosGuard } from './guard/alunos.guard';
+import { AlunosGuard } from './alunos/guards/alunos.guard';
 import { CursosGuard } from './guard/cursos.guard';
 import { AuthGuard } from './guard/auth.guard';
 import { FormsModule } from '@angular/forms';

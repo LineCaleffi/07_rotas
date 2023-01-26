@@ -11,7 +11,7 @@ Aprendendo a programar rotas com Angular2
 - Rotas Imperativas
 - Modo de funcionalidade
 - Rotas filhas 
-- Guarda de Rotas: CanActivate, CanActivateChild, CanDeactivate
+- Guarda de Rotas: CanActivate, CanActivateChild, CanDeactivate, Resolve
 
 
 ## Comandos (alguns)
@@ -29,7 +29,8 @@ Para projetos com bastante componentes, é necessário criar um routing e um mod
 
 Guarda de Rotas (Guard) -> Geralmente utilizamos esse guarda quando não queremos que usuário não autorizado navegue para nenhuma das rotas do módulo e também pare depois até mesmo:
 - CanActivate impede que usuários não autorizados acessem a rota. 
-- CanActivateChild: Verifica se o usuário pode visitar uma rota filha; 
-- CanDeactivate: Verifica se o usuário pode sair da rota; 
+- CanActivateChild: verifica se o usuário pode visitar uma rota filha; 
+- CanDeactivate: verifica se o usuário pode sair da rota; 
+- Resolve: carregando dados antes da rota ser ativada
 
 No caso deste projeto, se o usuário não estiver logado ele não deixa acessar a tela de cursos, alunos ou ''.
